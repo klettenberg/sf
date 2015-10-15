@@ -89,8 +89,12 @@
                 console.log(accordion_sel);
 
                 $(cb_no_data_sel).prop('checked', false);
-                $(accordion_sel).toggle();
-                //  $(cb_yes_data_sel).prop('checked', true);
+                $(accordion_sel).slideToggle();
+                if (!$(this).is(':checked')) {
+                    console.log('not checked yes');
+                    $(cb_no_data_sel).prop('checked', true);
+                }
+
 
 
             } else {

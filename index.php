@@ -80,13 +80,13 @@
 
             console.log("data-id:" + did);
             console.log("choice:" + choice);
-            console.log("whichEvent:" + event.type)
+            console.log("whichEvent:" + event.type);
 
             if (choice == 'yes') {
 
                 console.log('yes clicked');
                 console.log(cb_no_data_sel + " - " + cb_yes_data_sel);
-                console.log(accordion_sel)
+                console.log(accordion_sel);
 
                 $(cb_no_data_sel).prop('checked', false);
                 $(accordion_sel).toggle();
